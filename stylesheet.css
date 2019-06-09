@@ -1,0 +1,480 @@
+/* ======== Styles on all or multiple pages ======== */
+body {
+    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    font-size: medium;
+    background-color: #2b3a42; /* very dark grayish blue */
+    color: #bdd3de; /* light grayish blue */
+}
+
+#mainlink {
+    font-size: small;
+    position: absolute;
+    left: -180px; /* move the link off-screen to the left so it's not visible, but screen readers will still read it */
+}
+
+h1 {
+    color: #ff8f00; /* Pure (or mostly pure) orange */
+}
+
+h2 {
+    color: #ffc375; /* very light orange */
+}
+
+a:link {
+    color: #7DC3E3; /* very soft blue */
+}
+
+a:visited {
+    color: #C297E3; /* very soft violet */
+}
+
+article {
+    margin-left: 20px;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    width: 150px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: #2b3a42; /* very dark grayish blue */
+    font-weight: bold;
+    background-color: #ffc375; /* very light orange */
+    border-radius: 5px;
+}
+
+.links {
+    border-top: 2px solid #f0f0df; /* light grayish yellow */
+}
+
+.links > ul > li > p, .links > ul > li > ul> li > p {
+    padding-left: 20px;
+}
+
+footer {
+    font-size: x-small;
+    margin-top: 40px;
+    text-align: center;
+    background-color: #f0f0df; /* light grayish yellow */
+    color: #2b3a42; /* very dark grayish blue */
+}
+
+/* ================ Logo, title, and navigation bar ================== */
+.top {
+    background-color: #3f5866; /* very dark desaturated blue */
+    margin-bottom: 30px;
+}
+
+.logo {
+    margin: 10px 0px 0px 10px;
+}
+
+/* ===== Website title ====== */
+.sitetitle {
+    font-size: x-large;
+    font-stretch: ultra-expanded;
+    letter-spacing: 1px;
+}
+
+/* ===== navigation bar ===== */
+.navigation {
+    background-color: #f0f0df; /* light grayish yellow */
+    margin-top: 10px;
+}
+
+nav ul {
+    margin: 0px;
+    list-style-type: none; /* removes bullets */
+    padding: 0;
+    float: right;
+}
+
+nav ul li {
+    display: inline-block; /* puts list items in one horizontal line instead of stacked vertically */
+    float: left;
+}
+
+nav ul li a:link, nav ul li a:visited {
+    color: #2b3a42; /* very dark grayish blue */
+    text-decoration: none; /* removes underline from links */
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding: 8px 10px;
+}
+
+nav ul li a.active {
+    background-color: #ff8f00; /* Pure (or mostly pure) orange */
+    color: #2b3a42; /* very dark grayish blue */
+    height: 100%;
+}
+
+nav ul li a:hover {
+    background-color: #ffc375; /* very light orange */
+}
+
+.shortlink {
+    width: 76px; /*width of Home and Find Help links in nav bar */
+}
+
+.mediumlink {
+    width: 130px; /*width of Add a Resource link in nav bar */
+}
+
+.longlink {
+    width: 215px; /*width of Learn About Homelessness and Learn About Mental Health links in nav bar */
+}
+/* end navigation bar */
+
+
+/* ============== Home page =============== */
+.homelessquestions ul, .mentalhealthquestions ul, .professionalquestions ul {
+    display: inline-block;
+}
+
+.orange {
+    color: #ff8f00; /* Pure (or mostly pure) orange */
+}
+
+#onthiswebsite {
+    border-top: 2px solid #f0f0df; /* light grayish yellow */
+    margin-top: 30px;
+    padding-left: 40px;
+}
+
+#onthiswebsite ul li {
+    float: left;
+}
+
+#home, #head, #help {
+    margin: auto;
+}
+
+/* ============== Find Help page =============== */
+#search {
+    margin: 10px 0px;
+}
+
+#searchtype h3, #searchcity h3 {
+    display: inline;
+}
+
+#searchtype, #searchcity {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+select {
+    background-color: #fafaf5; /* light grayish yellow */
+    color: #2b3a42; /* very dark grayish blue */
+}
+
+.instructions div:not(.panel) {
+    margin-left: 20px;
+}
+
+/* ======= TABLE ======= */
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    color: #2b3a42; /* very dark grayish blue */
+    background-color: #fafaf5; /* light grayish yellow */
+}
+
+th {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 5px 5px 5px 5px;
+    text-align: left;
+    background-color: #ff8f00; /* Pure (or mostly pure) orange */
+}
+
+td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 5px 5px 5px 5px;
+    text-align: left;
+}
+
+tr:hover {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 5px 5px 5px 5px;
+    background-color: #e3e3c0; /*  */
+}
+/* END TABLE */
+
+/* ============== Add a Resource page =============== */
+#hidden {
+    display: none; /* In Advanced Databases, I couldn't get the form to work without an input radio button to insert the data into my database. I hid it because users don't need it and it would be confusing */
+}
+
+#required {
+    color: #ff7575; /* very light red */
+}
+
+.formlabel {
+    font-weight: bold;
+    text-align: right;
+}
+
+.formparenthesis {
+    font-style: italic;
+}
+
+input {
+    width: 50%;
+    height: 20px;
+}
+
+.flex-outer {
+    list-style-type: none;
+    padding: 0;
+    max-width: 1000px;
+}
+
+.flex-outer li {
+    display: flex; /* setting up flexbox */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-outer > li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.flex-outer > li > label {
+    flex: 1 0 250px; /* shorthand for flex-grow flex-shrink flex-basis */
+    max-width: 300px;
+}
+
+.flex-outer > li > label + *, {
+    flex: 1 0 220px;
+    margin: auto;
+}
+
+.flex-outer li input[type=submit] {
+    margin-left: auto;
+}
+
+/* ============== Learn About Mental Health page =============== */
+
+.red {
+    border-left: 5px solid red;
+    padding: 5px 20px 10px 20px;
+    background-color: #6b292e; /* very dark red */
+}
+
+
+/* ========= Basic responsive layout for all browsers (this was part of Grid) ==========*/
+.site {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+/* ============== Media Query =============== */
+@media screen and (max-width: 850px) {
+    .navigation {
+        height: 185px;
+        text-align: center;
+    }
+
+    nav ul {
+        float: none;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul li a:link, nav ul li a:visited {
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ul li a.active {
+        width: 100%;
+    }
+}
+
+/* ============ Grid layout for modern browsers =============== */
+
+@supports (grid-area: auto) { /* Check for CSS Grid support: */
+    @media screen and (min-width: 600px) { /* Enable grid for viewports 600px and wider: */
+
+        /* ==== all pages or multiple pages ==== */
+        .site { /* Disable fallback max-width center aligned rule: */
+			max-width: none;
+		}
+
+        .page {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-areas: /* dividing each page into 3 main areas */
+                "top"
+                "main"
+                "footer"
+        }
+
+        .top {
+            grid-area: top;
+            display: grid;
+            grid-template-columns: 210px auto;
+            grid-template-areas: /* setting areas for the logo, website title, and nav bar */
+                "logo sitetitle"
+                "navigation navigation"
+        }
+
+        .logo {
+            grid-area: logo;
+        }
+
+        .sitetitle {
+            grid-area: sitetitle;
+        }
+
+        .navigation {
+            grid-area: navigation;
+        }
+
+        #maincontent {
+            grid-area: main;
+            display: grid;
+            grid-template-columns: 2.5fr 1fr;
+            grid-gap: 10px;
+        }
+
+        .pagetitle {
+            grid-row: 1/2;
+            grid-column: 1/3;
+            margin: auto; /* centers page title */
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+
+        .instructions { /* on Find Help and Add a Resource pages */
+            grid-column: 1/3;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 2.5fr 1fr;
+        }
+
+        /* Learn About Homelessness and Learn About Mental Health pages */
+        .links {
+            grid-row: 5/6;
+            grid-column: 1/3;
+        }
+        /* ==== Home page ==== */
+        #onthiswebsite {
+            grid-column: 1/3;
+        }
+
+        .homelessquestions, .mentalhealthquestions, .professionalquestions  {
+            grid-column: 1/3;
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+        }
+        /* ==== Add a Resource page ==== */
+        #howtoadd {
+            grid-column: 1/3;
+        }
+
+        #form {
+            grid-column: 1/3;
+            /* display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 7px;
+            align-self: start; */
+        }
+
+        label {
+            justify-self: end;
+        }
+
+        .formrow {
+            grid-column: 2/3;
+        }
+
+        /* ==== Find Help page ==== */
+        #howtosearch {
+            grid-column: 1/3;
+        }
+
+        #descriptions {
+            grid-row: 2/3;
+        }
+
+        #search {
+            grid-column: 1/3;
+            grid-row: 3/4;
+        }
+
+        .table {
+            grid-column: 1/3;
+            grid-row: 4/5;
+        }
+
+        /* Learn About Homelessness page */
+        #typesofhomelessness {
+            /* grid-row: 2/4; */
+            grid-column: 1/3;
+        }
+
+        /* Learn About Mental Health page */
+        #warningsigns {
+            grid-column: 2/3;
+            grid-row: 2/4;
+        }
+
+        #whohasmentalillness {
+            grid-column: 1/3;
+        }
+
+    } /* @media screen and (min-width: 600px) */
+} /* end @supprts */
+
+/* ==== Accordion buttons with dropdown panels (Myths/Facts, Descriptions of resource types) ==== */
+.accordion {
+    background-color: #f0f0df; /* light grayish yellow */
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: 2px solid #e3e3c0; /* light grayish yellow */
+    font-size: medium;
+    font-weight: bold;
+    color: #2b3a42; /* very dark grayish blue */
+    transition: 0.4s;
+}
+
+.accordion.active, .accordion:hover {
+    background-color: #e3e3c0; /* light grayish yellow */
+}
+
+article .accordion:after { /* adds a plus sign on the right side of accordion button when the panel is closed */
+    content: '\002B'; /* "002B" is the unicode symbol for "+" */
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+article .active:after { /* changes the plus sign on the right side of accordion button to a minus sign when the panel is open */
+    content: "\2212"; /* "2212" is the unicode symbol for "-" */
+}
+
+.panel {
+    padding: 5px 10px;
+    display: none;
+    background-color: #fafaf5; /* light grayish yellow */
+    overflow: hidden;
+    color: #2b3a42; /* very dark grayish blue */
+}
